@@ -334,7 +334,7 @@ form {
   flex-direction: row;
   flex-wrap:wrap;
 }
-    .bnf1, .bnf2, .bnf3, .bnf4 {
+ .bnf1, .bnf2, .bnf3, .bnf4 {
         width: 100%;
         text-align: center;
         margin: 10px 0;
