@@ -304,7 +304,7 @@ form {
 }
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-start;
   }
 
@@ -324,11 +324,21 @@ form {
     font-size: 24px;
   }
 
-  .Benefits {
-    flex-direction: column;
-    align-items: center;
-  }
-
+  .Benefits{
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;            
+  gap: 30px;                      
+  padding: 20px;
+  background-color: #f0f0f0;
+  flex-direction: row;
+  flex-wrap:wrap;
+}
+    .bnf1, .bnf2, .bnf3, .bnf4 {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
   .card {
     width: 100%;
     flex-direction: column;
