@@ -302,3 +302,50 @@ form {
   margin-bottom: 10px;
   color: #81f495;
 }
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav a {
+    margin-left: 0;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
+  .hero-content {
+    padding: 20px;
+    font-size: 1rem;
+    height: auto;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .Benefits {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .card img {
+    width: 90%;
+    height: auto;
+  }
+
+  .booking form {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
