@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bike Rental</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+     <img src="logo.png" alt="Green wheel" class="Logo">
+    <nav>
+      <a href="#bikes">Bikes</a>
+      <a href="#booking">Book Now</a>
+      <a href="#contact">Contact Us</a>
+    </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+    <h2>Welcome to Green Wheel Bike Rental</h2>
+    <h2>Explore the City on Two Wheels</h2>
+    <p>Affordable and eco-friendly bike rentals</p>
+    <a href="#bikes" class="btn">Book a Bike</a>
+    </div>
+  </section>
+
+  <div class="Benifits">
+    <h1 class="heading">Benifits of Choosing Green Wheel Bike Rental</h1>
+    <div class="bnf1">
+      <img src="bnf1logo.png" alt="No Riding Limit" class="bnf1logo">
+      <h3>No Riding Limit</h3>
+      <p>Odometer won't scares you anymore.</p>
+    </div>
+     <div class="bnf2">
+      <img src="bnf2logo.png" alt="No Riding Limit" class="bnf2logo">
+      <h3>Secure payment</h3>
+      <p>Our Payment Partners are Industry Leaders.</p>
+      </div>
+       <div class="bnf3">
+        <img src="bnf3logo.png" alt="No Riding Limit" class="bnf3logo">
+      <h3>100% Moneyback</h3>
+      <p>Not Happy With Service, Take Your Money Back.</p>
+      </div>
+       <div class="bnf4">
+        <img src="bnf4logo.png" alt="No Riding Limit" class="bnf4logo">
+      <h3>Verified Dealers</h3>
+      <p>Every Single Dealer is Committed to Quality Service.</p>
+      </div>
+
+  <section id="bikes" class="bikes">
+    <h1>Available Bikes</h1>
+    <button class="navg prev">&#10094;</button>
+    <div class="slider">
+      <div class="card">
+        <img src="Bajaj Chethak ev.png" alt="Bajaj Chetak">
+        <h4>Bajaj Chetak</h4>
+        <p>30rs/hour</p>
+        <button onclick="selectBike('Bajaj Chetak')" class="card-button">Rent Now</button>
+      </div>
+      <div class="card">
+        <img src="TVS iQube.png" alt="TVS iQube">
+        <h4>TVS iQube </h4>
+        <p>35rs/hour</p>
+        <button onclick="selectBike('TVS iQube')" class="card-button">Rent Now</button>
+      </div>
+      <div class="card">
+        <img src="Ola S1 pro.png" alt="Ola S1 pro">
+        <h4>Ola S1 pro</h4>
+        <p>40rs/hour</p>
+        <button onclick="selectBike('Ola S1 pro')" class="card-button">Rent Now</button>
+      </div>
+       <div class="card">
+        <img src="Honda activa e.png" alt="Honda activa">
+        <h4>Honda activa e</h4>
+        <p>30rs/hour</p>
+        <button onclick="selectBike('Honda activa e')"class="card-button">Rent Now</button>
+      </div>
+       <div class="card">
+        <img src="Komaki X One.png" alt="Komaki X One">
+        <h4>Komaki X One</h4>
+        <p>25rs/hour</p>
+        <button onclick="selectBike('Komaki X One')" class="card-button">Rent Now</button>
+      </div>
+       <div class="card">
+        <img src="Ather 450X.png" alt="Ather 450X">
+        <h4>Ather 450X</h4>
+        <p>30rs/hour</p>
+        <button onclick="selectBike('Ather 450X')" class="card-button">Rent Now</button>
+      </div>
+    </div>
+    <button class="navg next">&#10095;</button>
+  </section>
+
+
+  <section id="booking" class="booking">
+    <div class="booking">
+    <h2 class="book-a-bike">Book a Bike</h2>
+    <form id="bookingForm">
+      <label for="bike">Selected Bike(Select from available bike):</label>
+      <input type="text" id="bike" name="bike" readonly required>
+
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" required>
+
+      <label for="mobile">Mobile no:</label>
+      <input type="number" id="number" required>
+
+      <label for="hours">Number of Hours:</label>
+      <input type="number" id="hours" required min="1">
+
+      <button type="submit" class="booking-button">Submit Booking</button>
+    </form>
+    <div id="confirmation"></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+  <div class="footer-content">
+    <div class="footer-logo">
+      <h2>Green Wheel</h2>
+      <p>Eco-friendly EV bike rentals for your smart rides.</p>
+    </div>
+    
+    <div class="location">
+      <h4>Location</h4>
+      <p>Udupi – Kundapura, Karnataka</p>
+    </div>
+    <section id="contact" class="footer-contact">
+    <div class="footer-contact">
+      <h4>Contact Us</h4>
+      <p>Email: nukyadirajathkulal@gmail.com</p>
+      <p>Phone: +919663150464</p>
+    </div>
+  </div>
+  </section>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Green Wheel. All rights reserved.</p>
+  </div>
+</footer>
+>
+
+  <script src="Script.js"></script>
+</body>
+</html>

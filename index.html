@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Green Wheel Bike rental</title>
+
+  <!-- Bootstrap (just for quick resets & grid if you ever need it) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root{
+      --green:#26d334;
+      --green-dark:#09d71e;
+      --bg1:#82f79b;
+      --bg2:#82f573;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family:'Arial',sans-serif;
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    }
+    .Background{
+      position:absolute;
+      background:url('Background.png') no-repeat center center/cover;
+      z-index:-1;
+      width:100%;
+      height:800px;
+    }
+
+    .hero-box{
+      text-align:center;
+      background:#fff;
+      padding:50px 30px;
+      border-radius:25px;
+      box-shadow:0 0 25px rgba(0,0,0,0.1);
+      max-width:600px;
+      position:relative; z-index:10;
+      animation:fadeSlide 1s ease-out forwards;
+      opacity:0; transform:translateY(30px);
+    }
+    @keyframes fadeSlide{
+      to{opacity:1;transform:translateY(0);}
+    }
+    .hero-box h1{color:var(--green);font-weight:600;}
+    .hero-box .caption{
+      font-size:18px;font-style:italic;color:#6d6d6d;margin-top:10px;
+    }
+    .hero-box p{font-size:18px;margin:30px 0 20px;color:#444;}
+
+ 
+    .btn-start{
+      background:var(--green);
+      color:black;
+      padding:10px 30px;
+      font-size:18px;
+      border-radius:30px;
+      border:none;
+      cursor:pointer;
+      transition:background-color .35s,transform .35s,box-shadow .35s;
+      box-shadow:0 4px 12px rgba(0,0,0,0.15);
+    }
+    .btn-start:hover{
+      background:green;
+      transform:scale(1.1);
+      box-shadow:0 12px 22px rgba(0,0,0,0.25);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- decorative bubbles -->
+
+  <!-- hero content -->
+   <img src="Background.png" alt="Background" class="Background">
+  <div class="hero-box">     
+    <h1>Welcome to Green wheel bike rental</h1>
+    <div class="caption">
+      “Your comfort and dignity matter. Your eco_friendly ride awaits.”
+    </div>
+    <p>Experience the freedom of two wheels with our eco-friendly bike rentals. Whether you're commuting, exploring, or just enjoying the ride, we've got you covered.</p>
+    
+    <a href="bikes.html" class="bikes">
+      <button class="btn-start">login</button>
+    </a>
+  </div>
+
+</body>
+</html>
